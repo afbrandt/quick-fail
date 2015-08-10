@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40B3219F9E65AB50B3A3A2D7 /* Pods_Tromboned.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8BB0B2C32F5E12C30740B5 /* Pods_Tromboned.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4904BCD61B76FB4C0014B947 /* ActionMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4904BCD51B76FB4C0014B947 /* ActionMedia.xcassets */; };
 		49787A511B79236400C03B70 /* libFailPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49787A481B7922B000C03B70 /* libFailPlayer.a */; };
 		49787A521B79237000C03B70 /* libFailPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49787A481B7922B000C03B70 /* libFailPlayer.a */; };
@@ -108,6 +109,9 @@
 		49B1E42B1B7597F200B575F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B1E42C1B7597F200B575F7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		49B1E42E1B7597F200B575F7 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		4A8BB0B2C32F5E12C30740B5 /* Pods_Tromboned.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tromboned.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75494F20BC7369338C2CD589 /* Pods-Tromboned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tromboned.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tromboned/Pods-Tromboned.release.xcconfig"; sourceTree = "<group>"; };
+		891CD381F65C81443F051C84 /* Pods-Tromboned.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tromboned.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tromboned/Pods-Tromboned.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			files = (
 				49787A511B79236400C03B70 /* libFailPlayer.a in Frameworks */,
 				49B1E41E1B758A2200B575F7 /* AVFoundation.framework in Frameworks */,
+				40B3219F9E65AB50B3A3A2D7 /* Pods_Tromboned.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +163,7 @@
 				49B1E4291B7597F200B575F7 /* Quick Fail */,
 				49B1E4261B7597F200B575F7 /* Frameworks */,
 				49B1E3F31B75878700B575F7 /* Products */,
+				FEC81039D48B3BB3BE42AA61 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,6 +222,7 @@
 			children = (
 				49787A411B7922B000C03B70 /* FailPlayer.xcodeproj */,
 				49B1E4271B7597F200B575F7 /* NotificationCenter.framework */,
+				4A8BB0B2C32F5E12C30740B5 /* Pods_Tromboned.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -239,6 +246,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FEC81039D48B3BB3BE42AA61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				891CD381F65C81443F051C84 /* Pods-Tromboned.debug.xcconfig */,
+				75494F20BC7369338C2CD589 /* Pods-Tromboned.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,11 +262,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B1E4111B75878700B575F7 /* Build configuration list for PBXNativeTarget "Tromboned" */;
 			buildPhases = (
+				5B13B8745EAAC794E5754262 /* Check Pods Manifest.lock */,
 				49B1E3EE1B75878700B575F7 /* Sources */,
 				49B1E3EF1B75878700B575F7 /* Frameworks */,
 				49B1E3F01B75878700B575F7 /* Resources */,
 				497879CC1B78708400C03B70 /* CopyFiles */,
 				49B1E4361B7597F200B575F7 /* Embed App Extensions */,
+				12C8584939179ADA8C1111EC /* Embed Pods Frameworks */,
+				96FD0D7AA7D5F222CE8DDFC5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -412,6 +431,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12C8584939179ADA8C1111EC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tromboned/Pods-Tromboned-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B13B8745EAAC794E5754262 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96FD0D7AA7D5F222CE8DDFC5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tromboned/Pods-Tromboned-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49B1E3EE1B75878700B575F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -558,6 +625,7 @@
 		};
 		49B1E4121B75878700B575F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891CD381F65C81443F051C84 /* Pods-Tromboned.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -574,6 +642,7 @@
 		};
 		49B1E4131B75878700B575F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75494F20BC7369338C2CD589 /* Pods-Tromboned.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

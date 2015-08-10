@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Mixpanel
 
 class ViewController: UIViewController {
 
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
 
     @IBAction func playSound(sender: AnyObject) {
         player.play()
+        Mixpanel.sharedInstance().track("Button pressed!")
     }
 
 }
