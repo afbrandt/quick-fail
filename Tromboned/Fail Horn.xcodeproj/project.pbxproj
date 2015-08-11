@@ -92,14 +92,14 @@
 		4904BCD51B76FB4C0014B947 /* ActionMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ActionMedia.xcassets; sourceTree = "<group>"; };
 		49787A341B791BC400C03B70 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		49787A411B7922B000C03B70 /* FailPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FailPlayer.xcodeproj; path = "../../fail-player/FailPlayer/FailPlayer.xcodeproj"; sourceTree = "<group>"; };
-		49B1E3F21B75878700B575F7 /* Tromboned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tromboned.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B1E3F21B75878700B575F7 /* Fail Horn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fail Horn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1E3F61B75878700B575F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B1E3F71B75878700B575F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49B1E3F91B75878700B575F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49B1E3FC1B75878700B575F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49B1E3FE1B75878700B575F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		49B1E4011B75878700B575F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		49B1E4071B75878700B575F7 /* TrombonedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrombonedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B1E4071B75878700B575F7 /* Fail HornTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fail HornTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B1E40C1B75878700B575F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49B1E40D1B75878700B575F7 /* TrombonedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrombonedTests.swift; sourceTree = "<group>"; };
 		49B1E41D1B758A2200B575F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -170,8 +170,8 @@
 		49B1E3F31B75878700B575F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49B1E3F21B75878700B575F7 /* Tromboned.app */,
-				49B1E4071B75878700B575F7 /* TrombonedTests.xctest */,
+				49B1E3F21B75878700B575F7 /* Fail Horn.app */,
+				49B1E4071B75878700B575F7 /* Fail HornTests.xctest */,
 				49B1E4251B7597F200B575F7 /* Quick Fail.appex */,
 			);
 			name = Products;
@@ -258,9 +258,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49B1E3F11B75878700B575F7 /* Tromboned */ = {
+		49B1E3F11B75878700B575F7 /* Fail Horn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49B1E4111B75878700B575F7 /* Build configuration list for PBXNativeTarget "Tromboned" */;
+			buildConfigurationList = 49B1E4111B75878700B575F7 /* Build configuration list for PBXNativeTarget "Fail Horn" */;
 			buildPhases = (
 				5B13B8745EAAC794E5754262 /* Check Pods Manifest.lock */,
 				49B1E3EE1B75878700B575F7 /* Sources */,
@@ -276,14 +276,14 @@
 			dependencies = (
 				49B1E4311B7597F200B575F7 /* PBXTargetDependency */,
 			);
-			name = Tromboned;
+			name = "Fail Horn";
 			productName = Tromboned;
-			productReference = 49B1E3F21B75878700B575F7 /* Tromboned.app */;
+			productReference = 49B1E3F21B75878700B575F7 /* Fail Horn.app */;
 			productType = "com.apple.product-type.application";
 		};
-		49B1E4061B75878700B575F7 /* TrombonedTests */ = {
+		49B1E4061B75878700B575F7 /* Fail HornTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49B1E4141B75878700B575F7 /* Build configuration list for PBXNativeTarget "TrombonedTests" */;
+			buildConfigurationList = 49B1E4141B75878700B575F7 /* Build configuration list for PBXNativeTarget "Fail HornTests" */;
 			buildPhases = (
 				49B1E4031B75878700B575F7 /* Sources */,
 				49B1E4041B75878700B575F7 /* Frameworks */,
@@ -294,9 +294,9 @@
 			dependencies = (
 				49B1E4091B75878700B575F7 /* PBXTargetDependency */,
 			);
-			name = TrombonedTests;
+			name = "Fail HornTests";
 			productName = TrombonedTests;
-			productReference = 49B1E4071B75878700B575F7 /* TrombonedTests.xctest */;
+			productReference = 49B1E4071B75878700B575F7 /* Fail HornTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		49B1E4241B7597F200B575F7 /* Quick Fail */ = {
@@ -349,7 +349,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49B1E3ED1B75878700B575F7 /* Build configuration list for PBXProject "Tromboned" */;
+			buildConfigurationList = 49B1E3ED1B75878700B575F7 /* Build configuration list for PBXProject "Fail Horn" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -368,8 +368,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				49B1E3F11B75878700B575F7 /* Tromboned */,
-				49B1E4061B75878700B575F7 /* TrombonedTests */,
+				49B1E3F11B75878700B575F7 /* Fail Horn */,
+				49B1E4061B75878700B575F7 /* Fail HornTests */,
 				49B1E4241B7597F200B575F7 /* Quick Fail */,
 			);
 		};
@@ -510,7 +510,7 @@
 /* Begin PBXTargetDependency section */
 		49B1E4091B75878700B575F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49B1E3F11B75878700B575F7 /* Tromboned */;
+			target = 49B1E3F11B75878700B575F7 /* Fail Horn */;
 			targetProxy = 49B1E4081B75878700B575F7 /* PBXContainerItemProxy */;
 		};
 		49B1E4311B7597F200B575F7 /* PBXTargetDependency */ = {
@@ -633,7 +633,7 @@
 				INFOPLIST_FILE = Tromboned/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fail Horn";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tromboned/Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
@@ -650,7 +650,7 @@
 				INFOPLIST_FILE = Tromboned/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fail Horn";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tromboned/Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
@@ -671,8 +671,8 @@
 				);
 				INFOPLIST_FILE = TrombonedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tromboned.app/Tromboned";
+				PRODUCT_NAME = "Fail HornTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fail Horn.app/Fail Horn";
 			};
 			name = Debug;
 		};
@@ -686,8 +686,8 @@
 				);
 				INFOPLIST_FILE = TrombonedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tromboned.app/Tromboned";
+				PRODUCT_NAME = "Fail HornTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fail Horn.app/Fail Horn";
 			};
 			name = Release;
 		};
@@ -730,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49B1E3ED1B75878700B575F7 /* Build configuration list for PBXProject "Tromboned" */ = {
+		49B1E3ED1B75878700B575F7 /* Build configuration list for PBXProject "Fail Horn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49B1E40F1B75878700B575F7 /* Debug */,
@@ -739,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49B1E4111B75878700B575F7 /* Build configuration list for PBXNativeTarget "Tromboned" */ = {
+		49B1E4111B75878700B575F7 /* Build configuration list for PBXNativeTarget "Fail Horn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49B1E4121B75878700B575F7 /* Debug */,
@@ -748,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49B1E4141B75878700B575F7 /* Build configuration list for PBXNativeTarget "TrombonedTests" */ = {
+		49B1E4141B75878700B575F7 /* Build configuration list for PBXNativeTarget "Fail HornTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49B1E4151B75878700B575F7 /* Debug */,
